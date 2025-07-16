@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "itemsglow",
+	"version": "${version}",
+	"name": "ItemsGlow",
+	"description": "Highlights the items you need in any storage with the ability to change colors!",
+	"authors": [
+		"harimasa"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/itemsglow",
+		"sources": "https://github.com/harimasa/ItemsGlow"
+	},
+	"license": "MIT License",
+	"icon": "assets/itemsglow/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"ru.harimasa.ItemsGlow"
+		],
+		"modmenu":[
+			"ru.harimasa.config.Modmenu"
+		]
+	},
+	"mixins": [
+		"itemsglow.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*",
+		"modmenu": "*",
+		"yet_another_config_lib_v3": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
